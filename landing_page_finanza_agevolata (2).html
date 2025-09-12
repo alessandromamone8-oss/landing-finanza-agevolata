@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consulenza Finanza Agevolata</title>
+<style>
+/* Reset e font */
+* { margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+body { background:#f0f4f8; color:#333; }
+a { text-decoration:none; }
+
+/* Hero */
+.hero { background: linear-gradient(135deg, #00cc77, #0077cc); color:#fff; text-align:center; padding:100px 20px; }
+.hero h1 { font-size:2.8em; margin-bottom:20px; line-height:1.2; }
+.hero p { font-size:1.2em; margin-bottom:40px; }
+.cta-button { background:#fff; color:#0077cc; font-weight:bold; padding:20px 40px; font-size:1.2em; border-radius:12px; transition:0.3s; }
+.cta-button:hover { background:#f0f0f0; }
+
+/* Sezione Servizi */
+.services { display:flex; flex-wrap:wrap; justify-content:center; margin:60px 20px; gap:25px; }
+.service-box { background:#fff; flex:1 1 280px; max-width:320px; padding:30px; border-radius:15px; box-shadow:0 10px 25px rgba(0,0,0,0.08); text-align:center; transition:0.3s; }
+.service-box:hover { transform: translateY(-5px); box-shadow:0 15px 35px rgba(0,0,0,0.12); }
+.service-box h3 { color:#0077cc; margin-bottom:15px; font-size:1.3em; }
+.service-box p { font-size:1em; color:#555; line-height:1.5; }
+
+/* Form Lead */
+.lead-form { background:#fff; max-width:550px; margin:60px auto; padding:40px; border-radius:15px; box-shadow:0 10px 25px rgba(0,0,0,0.08); text-align:center; }
+.lead-form h2 { margin-bottom:25px; color:#0077cc; font-size:1.8em; }
+.lead-form input { width:90%; padding:15px; margin:12px 0; border:1px solid #ccc; border-radius:10px; font-size:1em; }
+.lead-form button { background:#0077cc; color:#fff; padding:18px 40px; border:none; font-size:1.1em; border-radius:12px; cursor:pointer; transition:0.3s; }
+.lead-form button:hover { background:#005fa3; }
+
+/* Footer */
+footer { text-align:center; padding:25px; font-size:0.9em; color:#777; background:#f5f5f5; }
+
+/* Mobile responsive */
+@media (max-width:768px) {
+  .services { flex-direction:column; align-items:center; }
+  .hero h1 { font-size:2.2em; }
+  .cta-button { font-size:1em; padding:15px 30px; }
+}
+</style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero">
+<h1>Consulenza Finanza Agevolata<br>Palermo & Sud Italia</h1>
+<p>Accedi a PNRR, Smart&Start, Resto al Sud e bandi locali senza stress. La tua impresa merita il supporto giusto!</p>
+<a href="#form" class="cta-button">Richiedi Consulenza Gratuita</a>
+</section>
+
+<!-- Servizi -->
+<section class="services">
+<div class="service-box">
+<h3>PNRR & Fondi Europei</h3>
+<p>Analisi opportunità e gestione pratica completa per la tua impresa.</p>
+</div>
+<div class="service-box">
+<h3>Smart&Start & Resto al Sud</h3>
+<p>Supporto dalla domanda al finanziamento, senza stress burocratico.</p>
+</div>
+<div class="service-box">
+<h3>Bandi Regionali</h3>
+<p>Ricerca e valutazione dei bandi locali più adatti alla tua azienda.</p>
+</div>
+</section>
+
+<!-- Form Lead -->
+<section class="lead-form" id="form">
+<h2>Verifica la tua idoneità in 1 minuto</h2>
+<form action="https://formspree.io/f/xzzawvob" method="POST">
+<input type="text" name="nome" placeholder="Nome e Cognome" required><br>
+<input type="email" name="email" placeholder="Email" required><br>
+<input type="tel" name="telefono" placeholder="Telefono" required><br>
+<input type="text" name="settore" placeholder="Settore azienda" required><br>
+<input type="text" name="interesse" placeholder="Interesse bandi" required><br>
+<button type="submit">INVIA RICHIESTA</button>
+</form>
+</section>
+
+<footer>
+&copy; 2025 Consulenza Finanza Agevolata. Tutti i diritti riservati.
+</footer>
+
+</body>
+</html>
