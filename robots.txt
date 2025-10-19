@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alessandromamone8-oss.github.io/landing-finanza-agevolata/sitemap.xml
