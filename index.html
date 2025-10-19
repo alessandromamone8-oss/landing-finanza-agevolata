@@ -1,88 +1,222 @@
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Consulenza Finanza Agevolata</title>
-<style>
-/* Reset e font */
-* { margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-body { background:#f0f4f8; color:#333; }
-a { text-decoration:none; }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-/* Hero */
-.hero { background: linear-gradient(135deg, #00cc77, #0077cc); color:#fff; text-align:center; padding:100px 20px; }
-.hero h1 { font-size:2.8em; margin-bottom:20px; line-height:1.2; }
-.hero p { font-size:1.2em; margin-bottom:40px; }
-.cta-button { background:#fff; color:#0077cc; font-weight:bold; padding:20px 40px; font-size:1.2em; border-radius:12px; transition:0.3s; }
-.cta-button:hover { background:#f0f0f0; }
+  <title>Finanza Agevolata Palermo | Mamone Business Plan | Consulenza Startup</title>
+  <meta name="description" content="Mamone Business Plan aiuta imprese e startup in Sicilia e Sud Italia ad accedere a fondi PNRR, Resto al Sud e Smart&Start con consulenza personalizzata.">
+  <meta name="keywords" content="finanza agevolata Palermo, business plan, PNRR, Resto al Sud, Smart&Start, Invitalia, IRFIS, bandi Sicilia, startup, consulenza imprese">
+  <meta name="author" content="Mamone.BusinessPlan">
 
-/* Sezione Servizi */
-.services { display:flex; flex-wrap:wrap; justify-content:center; margin:60px 20px; gap:25px; }
-.service-box { background:#fff; flex:1 1 280px; max-width:320px; padding:30px; border-radius:15px; box-shadow:0 10px 25px rgba(0,0,0,0.08); text-align:center; transition:0.3s; }
-.service-box:hover { transform: translateY(-5px); box-shadow:0 15px 35px rgba(0,0,0,0.12); }
-.service-box h3 { color:#0077cc; margin-bottom:15px; font-size:1.3em; }
-.service-box p { font-size:1em; color:#555; line-height:1.5; }
+  <!-- Font Anton -->
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 
-/* Form Lead */
-.lead-form { background:#fff; max-width:550px; margin:60px auto; padding:40px; border-radius:15px; box-shadow:0 10px 25px rgba(0,0,0,0.08); text-align:center; }
-.lead-form h2 { margin-bottom:25px; color:#0077cc; font-size:1.8em; }
-.lead-form input { width:90%; padding:15px; margin:12px 0; border:1px solid #ccc; border-radius:10px; font-size:1em; }
-.lead-form button { background:#0077cc; color:#fff; padding:18px 40px; border:none; font-size:1.1em; border-radius:12px; cursor:pointer; transition:0.3s; }
-.lead-form button:hover { background:#005fa3; }
+  <style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; background: #f0f4f8; }
 
-/* Footer */
-footer { text-align:center; padding:25px; font-size:0.9em; color:#777; background:#f5f5f5; }
+  header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 20px 50px; background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  header img { height: 60px; }
+  header h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 1.6em;
+    color: #2341e1;
+    letter-spacing: 1px;
+  }
 
-/* Mobile responsive */
-@media (max-width:768px) {
-  .services { flex-direction:column; align-items:center; }
-  .hero h1 { font-size:2.2em; }
-  .cta-button { font-size:1em; padding:15px 30px; }
-}
-</style>
+  /* Hero Section */
+  .hero {
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+    background: linear-gradient(135deg, #2341e1, #739da4);
+    color: white; padding: 80px 20px;
+  }
+  .hero-content { flex: 1 1 400px; max-width: 550px; text-align: left; padding: 20px; }
+  .hero-content h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 2.6em; margin-bottom: 15px; line-height: 1.2;
+    color: #ffd21b;
+  }
+  .hero-content p { font-size: 1.1em; margin-bottom: 30px; }
+  .cta-button {
+    background: #ffd21b; color: #2341e1; font-weight: bold;
+    padding: 18px 40px; border-radius: 10px;
+    font-size: 1.1em; transition: 0.3s;
+  }
+  .cta-button:hover { background: #ffe35a; }
+
+  .hero img {
+    flex: 1 1 300px; max-width: 420px; border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  }
+
+  /* Services */
+  .services {
+    display: flex; flex-wrap: wrap; justify-content: center;
+    margin: 60px 20px; gap: 25px;
+  }
+  .service-box {
+    background: #fff; flex: 1 1 280px; max-width: 320px;
+    padding: 30px; border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08); text-align: center;
+    transition: 0.3s;
+  }
+  .service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+  }
+  .service-box h3 {
+    font-family: 'Anton', sans-serif;
+    color: #2341e1; margin-bottom: 10px;
+  }
+  .service-box p { color: #555; }
+
+  /* Invitalia Section */
+  .invitalia {
+    background: #fff; padding: 60px 20px; text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05); margin: 40px 0;
+  }
+  .invitalia h2 {
+    font-family: 'Anton', sans-serif;
+    color: #2341e1; font-size: 2em; margin-bottom: 20px;
+  }
+  .invitalia p {
+    max-width: 800px; margin: 0 auto 30px; font-size: 1.1em; color: #555;
+  }
+  .invitalia-links {
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;
+  }
+  .invitalia-links a {
+    background: #739da4; color: white; padding: 15px 25px;
+    border-radius: 10px; text-decoration: none; font-weight: bold; transition: 0.3s;
+  }
+  .invitalia-links a:hover { background: #2341e1; }
+
+  /* News Section */
+  .news {
+    background: #f9fbfd; padding: 60px 20px; text-align: center;
+  }
+  .news h2 {
+    font-family: 'Anton', sans-serif;
+    color: #2341e1; font-size: 2em; margin-bottom: 25px;
+  }
+  .news p { color: #555; margin-bottom: 25px; }
+  .news-links {
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;
+  }
+  .news-links a {
+    background: #ffd21b; color: #2341e1;
+    padding: 15px 25px; border-radius: 10px; text-decoration: none;
+    font-weight: bold; transition: 0.3s;
+  }
+  .news-links a:hover { background: #ffe35a; }
+
+  /* Lead Form */
+  .lead-form {
+    background: #fff; max-width: 550px; margin: 60px auto; padding: 40px;
+    border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    text-align: center;
+  }
+  .lead-form h2 {
+    font-family: 'Anton', sans-serif;
+    color: #2341e1; margin-bottom: 25px; font-size: 1.8em;
+  }
+  .lead-form input {
+    width: 90%; padding: 15px; margin: 12px 0;
+    border: 1px solid #ccc; border-radius: 10px;
+  }
+  .lead-form button {
+    background: #2341e1; color: #fff; border: none;
+    padding: 15px 40px; border-radius: 10px;
+    cursor: pointer; transition: 0.3s; font-size: 1.1em;
+  }
+  .lead-form button:hover { background: #1c32b3; }
+
+  footer {
+    background: #2341e1; color: #fff;
+    text-align: center; padding: 25px; font-size: 0.9em;
+  }
+
+  @media (max-width:768px) {
+    .hero { flex-direction: column; text-align: center; }
+    .hero-content { text-align: center; }
+    .hero img { margin-top: 20px; }
+    .invitalia-links, .news-links { flex-direction: column; }
+  }
+  </style>
 </head>
 <body>
 
-<!-- Hero Section -->
+<header>
+  <img src="img/logo.jpg" alt="Logo Mamone Business Plan">
+  <h1>Mamone.BusinessPlan</h1>
+</header>
+
 <section class="hero">
-<h1>Consulenza Finanza Agevolata<br>Palermo & Sud Italia</h1>
-<p>Accedi a PNRR, Smart&Start, Resto al Sud e bandi locali senza stress. La tua impresa merita il supporto giusto!</p>
-<a href="#form" class="cta-button">Richiedi Consulenza Gratuita</a>
+  <div class="hero-content">
+    <h2>Consulenza Finanza Agevolata<br>Palermo & Sud Italia</h2>
+    <p>Accedi ai fondi PNRR, Smart&Start e Resto al Sud con un supporto completo. Mamone.BusinessPlan ti guida passo dopo passo nel mondo della finanza agevolata.</p>
+    <a href="#form" class="cta-button">Richiedi Consulenza Gratuita</a>
+  </div>
+  <img src="img/mamone.jpg" alt="Alessandro Mamone - Consulente Finanza Agevolata Palermo">
 </section>
 
-<!-- Servizi -->
 <section class="services">
-<div class="service-box">
-<h3>PNRR & Fondi Europei</h3>
-<p>Analisi opportunità e gestione pratica completa per la tua impresa.</p>
-</div>
-<div class="service-box">
-<h3>Smart&Start & Resto al Sud</h3>
-<p>Supporto dalla domanda al finanziamento, senza stress burocratico.</p>
-</div>
-<div class="service-box">
-<h3>Bandi Regionali</h3>
-<p>Ricerca e valutazione dei bandi locali più adatti alla tua azienda.</p>
-</div>
+  <div class="service-box">
+    <h3>PNRR & Fondi Europei</h3>
+    <p>Analisi, strategia e gestione completa per ottenere i fondi più adatti alla tua impresa.</p>
+  </div>
+  <div class="service-box">
+    <h3>Smart&Start & Resto al Sud</h3>
+    <p>Supporto dalla preparazione della domanda fino all’erogazione del finanziamento.</p>
+  </div>
+  <div class="service-box">
+    <h3>Bandi Regionali</h3>
+    <p>Scopri le agevolazioni attive in Sicilia e Sud Italia per far crescere la tua azienda.</p>
+  </div>
 </section>
 
-<!-- Form Lead -->
+<section class="invitalia">
+  <h2>Programmi Invitalia & Partner Istituzionali</h2>
+  <p>Scopri tutte le iniziative nazionali e regionali per sostenere imprese, startup e professionisti. Mamone.BusinessPlan ti aiuta a scegliere e gestire i bandi più efficaci per la tua realtà.</p>
+  <div class="invitalia-links">
+    <a href="https://www.invitalia.it" target="_blank" rel="noopener">Invitalia - Agenzia Nazionale</a>
+    <a href="https://www.irfis.it" target="_blank" rel="noopener">IRFIS FinSicilia</a>
+    <a href="https://www.sviluppoeconomico.gov.it" target="_blank" rel="noopener">Ministero Imprese & Made in Italy</a>
+    <a href="https://restoalsud.invitalia.it" target="_blank" rel="noopener">Resto al Sud</a>
+    <a href="https://www.smartstart.invitalia.it" target="_blank" rel="noopener">Smart&Start Italia</a>
+  </div>
+</section>
+
+<section class="news">
+  <h2>News Finanza Agevolata & Turismo Sicilia</h2>
+  <p>Rimani aggiornato sulle ultime novità, bandi e opportunità per le imprese del Sud Italia.</p>
+  <div class="news-links">
+    <a href="https://www.regione.sicilia.it/istituzioni/servizi-informativi/assessorato-turismo-sport-spettacolo" target="_blank" rel="noopener">Assessorato Turismo Sicilia</a>
+    <a href="https://www.ilsole24ore.com/sez/economia" target="_blank" rel="noopener">Il Sole 24 Ore - Economia</a>
+    <a href="https://www.invitalia.it/chi-siamo/news" target="_blank" rel="noopener">News Invitalia</a>
+    <a href="https://www.irfis.it/news/" target="_blank" rel="noopener">News IRFIS FinSicilia</a>
+  </div>
+</section>
+
 <section class="lead-form" id="form">
-<h2>Verifica la tua idoneità in 1 minuto</h2>
-<form action="https://formspree.io/f/xzzawvob" method="POST">
-<input type="text" name="nome" placeholder="Nome e Cognome" required><br>
-<input type="email" name="email" placeholder="Email" required><br>
-<input type="tel" name="telefono" placeholder="Telefono" required><br>
-<input type="text" name="settore" placeholder="Settore azienda" required><br>
-<input type="text" name="interesse" placeholder="Interesse bandi" required><br>
-<button type="submit">INVIA RICHIESTA</button>
-</form>
+  <h2>Verifica la tua idoneità in 1 minuto</h2>
+  <form action="https://formspree.io/f/xzzawvob" method="POST">
+    <input type="text" name="nome" placeholder="Nome e Cognome" required><br>
+    <input type="email" name="email" placeholder="Email" required><br>
+    <input type="tel" name="telefono" placeholder="Telefono" required><br>
+    <input type="text" name="settore" placeholder="Settore azienda" required><br>
+    <input type="text" name="interesse" placeholder="Interesse bandi" required><br>
+    <button type="submit">INVIA RICHIESTA</button>
+  </form>
 </section>
 
 <footer>
-&copy; 2025 Consulenza Finanza Agevolata. Tutti i diritti riservati.
+  &copy; 2025 Mamone.BusinessPlan — Consulenza Finanza Agevolata Palermo & Sud Italia. Tutti i diritti riservati.
 </footer>
 
 </body>
