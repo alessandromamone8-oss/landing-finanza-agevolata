@@ -8,7 +8,7 @@
   <meta name="keywords" content="finanza agevolata Palermo, Resto al Sud, Smart&Start, IRFIS, Nuova Sabatini, bandi Sicilia, Alessandro Mamone, business plan, consulente imprese, startup, incentivi, contributi">
   <meta name="author" content="Alessandro Mamone Business Plan">
   <link rel="canonical" href="https://www.finanzapmi.it/">
-  
+
   <!-- Open Graph -->
   <meta property="og:title" content="Consulenza Finanza Agevolata Palermo | Alessandro Mamone">
   <meta property="og:description" content="Accedi a fondi PNRR, Smart&Start, Resto al Sud e bandi IRFIS con consulenza personalizzata.">
@@ -23,7 +23,7 @@
   <meta name="twitter:image" content="https://www.finanzapmi.it/img/logo.png">
 
   <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Anton&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <link rel="icon" type="image/png" href="/img/logo.png">
 
@@ -32,243 +32,268 @@
       --blu: #2341e1;
       --azzurro: #739da4;
       --giallo: #ffd21b;
-      --testo: #1e1e1e;
-      --sfondo: #f7f9fc;
+      --scuro: #0f111a;
+      --bianco: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: var(--sfondo);
-      color: var(--testo);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--scuro);
+      color: var(--bianco);
+      line-height: 1.6;
     }
 
-    header {
-      background: #fff;
-      border-bottom: 2px solid var(--blu);
+    a {
+      color: var(--giallo);
+      text-decoration: none;
+    }
+
+    .header {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 10px 30px;
+      padding: 18px 28px;
+      background: var(--scuro);
+      border-bottom: 1px solid #333;
       position: sticky;
       top: 0;
       z-index: 100;
     }
 
-    header img {
-      height: 48px;
+    .header .logo {
+      font-family: Anton, sans-serif;
+      color: var(--giallo);
+      font-weight: 700;
+      letter-spacing: 1px;
+      border: 2px solid var(--bianco);
+      padding: 6px 12px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .header img {
+      height: 38px;
     }
 
     nav a {
-      margin: 0 14px;
-      text-decoration: none;
-      color: var(--blu);
+      margin-left: 18px;
+      color: var(--bianco);
       font-weight: 600;
-      transition: 0.2s;
     }
 
     nav a:hover {
       color: var(--giallo);
     }
 
-    .hero {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      padding: 70px 30px;
+    .hero-sub {
       background: linear-gradient(135deg, var(--blu), var(--azzurro));
-      color: #fff;
-    }
-
-    .hero-text {
-      max-width: 600px;
-    }
-
-    .hero-text h1 {
-      font-size: 2.3rem;
       color: var(--giallo);
-      margin-bottom: 12px;
-    }
-
-    .hero-text p {
-      font-size: 1.05rem;
-      line-height: 1.6;
-      color: rgba(255,255,255,0.92);
-    }
-
-    .cta-buttons {
-      margin-top: 25px;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 12px 24px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: all 0.3s ease;
-    }
-
-    .btn-primary {
-      background: var(--giallo);
-      color: var(--blu);
-    }
-
-    .btn-primary:hover {
-      background: #ffce00;
-    }
-
-    .btn-outline {
-      border: 2px solid #fff;
-      color: #fff;
-    }
-
-    .btn-outline:hover {
-      background: #fff;
-      color: var(--blu);
-    }
-
-    .services, .bandi {
       padding: 60px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .services h2, .bandi h2 {
-      color: var(--blu);
-      font-size: 1.8rem;
       text-align: center;
-      margin-bottom: 30px;
     }
 
-    .service-grid, .bandi-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
+    .hero-sub h1 {
+      font-family: Anton, sans-serif;
+      font-size: 2.4rem;
+      margin-bottom: 12px;
+      border-bottom: 2px solid var(--bianco);
+      display: inline-block;
+      padding-bottom: 6px;
     }
 
-    .card {
-      background: #fff;
-      padding: 20px;
+    .content {
+      max-width: 980px;
+      margin: 32px auto;
+      padding: 28px;
+      background: transparent;
       border-radius: 12px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
-      text-align: center;
-      transition: 0.3s;
     }
 
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card h3 {
-      color: var(--blu);
+    .content h2 {
+      color: var(--giallo);
+      margin-top: 18px;
       margin-bottom: 10px;
     }
 
-    .lead-form {
-      text-align: center;
-      padding: 50px 20px;
-      background: #fff;
-      border-radius: 12px;
-      margin: 50px auto;
-      max-width: 700px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    .content p, .content li {
+      color: var(--bianco);
     }
 
-    .lead-form input {
-      width: 85%;
-      padding: 10px;
-      margin: 10px 0;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-    }
-
-    .lead-form button {
-      background: var(--blu);
-      color: #fff;
-      border: none;
-      padding: 12px 28px;
-      border-radius: 8px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: 0.2s;
-    }
-
-    .lead-form button:hover {
-      background: #1c34b5;
-    }
-
-    .social {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
+    .bandi-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
       margin-top: 20px;
     }
 
-    .social a {
-      width: 42px;
-      height: 42px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      color: #fff;
-      font-size: 20px;
-      transition: 0.3s;
+    .bando-card {
+      background: #1c1f2b;
+      padding: 18px;
+      border-radius: 12px;
+      text-decoration: none;
+      color: var(--giallo);
+      border: 1px solid var(--bianco);
+      transition: background 0.3s ease;
     }
 
-    .linkedin { background: #0077B5; }
-    .instagram { background: linear-gradient(45deg,#fd5949,#d6249f,#285AEB); }
-    .whatsapp { background: #25D366; }
+    .bando-card:hover {
+      background: #2a2d3c;
+    }
 
-    .social a:hover {
-      opacity: 0.8;
+    .lead-form {
+      max-width: 720px;
+      margin: 36px auto;
+      padding: 24px;
+      background: #1c1f2b;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .lead-form input {
+      width: 90%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #555;
+      border-radius: 8px;
+      background: #2a2d3c;
+      color: var(--bianco);
+    }
+
+    .lead-form button {
+      background: var(--giallo);
+      color: var(--scuro);
+      padding: 12px 22px;
+      border-radius: 8px;
+      border: none;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .lead-form button:hover {
+      background: var(--bianco);
+      color: var(--blu);
+    }
+
+    .social-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 24px;
+      flex-wrap: wrap;
+    }
+
+    .btn-social {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+      color: #fff;
+      transition: background 0.3s ease;
+    }
+
+    .btn-social i {
+      font-size: 18px;
+    }
+
+    .btn-social.instagram {
+      background: linear-gradient(45deg, #fd5949, #d6249f, #285AEB);
+    }
+
+    .btn-social.linkedin {
+      background: #0077b5;
+    }
+
+    .btn-social.whatsapp {
+      background: #25D366;
+    }
+
+    .btn-social:hover {
+      opacity: 0.85;
     }
 
     footer {
       background: var(--blu);
-      color: #fff;
+      color: var(--bianco);
       text-align: center;
       padding: 20px;
-      margin-top: 60px;
-      font-size: 0.9rem;
+      margin-top: 28px;
+      font-size: 14px;
     }
 
-    /* Cookie banner */
+    /* COOKIE BANNER DARK */
     #cookie {
       position: fixed;
       bottom: 0;
       left: 0;
       right: 0;
-      background: var(--blu);
-      color: #fff;
-      padding: 12px 18px;
+      background: #1c1f2b;
+      color: var(--bianco);
+      border-top: 1px solid #333;
+      padding: 14px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       z-index: 200;
       font-size: 0.9rem;
+      flex-wrap: wrap;
+    }
+
+    #cookie a {
+      color: var(--giallo);
+      text-decoration: underline;
     }
 
     #cookie button {
       background: var(--giallo);
-      color: var(--blu);
+      color: var(--scuro);
       border: none;
-      padding: 8px 14px;
+      padding: 10px 18px;
       border-radius: 8px;
-      font-weight: 600;
+      font-weight: 700;
       cursor: pointer;
+      transition: background 0.3s ease;
+      margin-top: 8px;
+    }
+
+    #cookie button:hover {
+      background: var(--bianco);
+      color: var(--blu);
+    }
+
+    @media(max-width:800px) {
+      .header {
+        padding: 12px;
+      }
+      .hero-sub {
+        padding: 36px;
+      }
+      #cookie {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <img src="/img/logo.png" alt="Logo Alessandro Mamone">
+  <header class="header">
+    <div class="logo">
+      <img src="/img/logo.png" alt="Logo Alessandro Mamone"> Alessandro Mamone
+    </div>
     <nav>
       <a href="#bandi">Bandi</a>
       <a href="#form">Contatti</a>
@@ -276,36 +301,30 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Consulenza Finanza Agevolata — Palermo & Sud Italia</h1>
-      <p>Supporto completo per accedere a fondi pubblici e regionali: <strong>Resto al Sud, Smart&Start, Nuova Sabatini, IRFIS</strong> e bandi Regione Sicilia.</p>
-      <div class="cta-buttons">
-        <a href="#form" class="btn btn-primary"><i class="fa-solid fa-calendar-check"></i> Prenota Consulenza</a>
-        <a href="https://wa.me/393662460159" class="btn btn-outline" target="_blank"><i class="fa-brands fa-whatsapp"></i> Scrivimi su WhatsApp</a>
-      </div>
-    </div>
+  <section class="hero-sub">
+    <h1>Consulenza Finanza Agevolata — Palermo & Sud Italia</h1>
+    <p>Supporto completo per accedere a fondi pubblici e regionali: <strong>Resto al Sud, Smart&Start, Nuova Sabatini, IRFIS</strong> e bandi Regione Sicilia.</p>
   </section>
 
-  <section class="services">
+  <section class="content">
     <h2>Servizi Principali</h2>
-    <div class="service-grid">
-      <div class="card"><h3>PNRR & Fondi UE</h3><p>Strategia e gestione per ottenere fondi europei e PNRR per la tua impresa.</p></div>
-      <div class="card"><h3>Smart&Start & Resto al Sud</h3><p>Assistenza completa per accedere ai principali incentivi per startup e PMI.</p></div>
-      <div class="card"><h3>Bandi IRFIS & Regionali</h3><p>Finanziamenti e contributi specifici per le imprese siciliane.</p></div>
-    </div>
+    <ul>
+      <li>PNRR & Fondi UE – Strategia e gestione per ottenere fondi europei.</li>
+      <li>Smart&Start & Resto al Sud – Incentivi per startup e PMI.</li>
+      <li>Bandi IRFIS & Regionali – Finanziamenti per imprese siciliane.</li>
+    </ul>
   </section>
 
-  <section class="bandi" id="bandi">
+  <section class="content" id="bandi">
     <h2>Strumenti di Finanza Agevolata Attivi</h2>
-    <div class="bandi-grid">
-      <a class="card" href="/resto-al-sud.html"><h3>Resto al Sud</h3><p>Contributo a fondo perduto per investimenti nel Mezzogiorno.</p></a>
-      <a class="card" href="/smartstart.html"><h3>Smart&Start Italia</h3><p>Finanziamenti fino a 1,5M€ per startup innovative.</p></a>
-      <a class="card" href="/nuova-sabatini.html"><h3>Nuova Sabatini</h3><p>Agevolazione per acquisto di macchinari e tecnologie.</p></a>
-      <a class="card" href="/on-tasso-zero.html"><h3>ON - Tasso Zero</h3><p>Finanziamenti per giovani e donne che avviano nuove imprese.</p></a>
-      <a class="card" href="/cultura-crea.html"><h3>Cultura Crea</h3><p>Supporto per progetti culturali e turistici nel Sud Italia.</p></a>
-      <a class="card" href="/irfis.html"><h3>Bandi IRFIS FinSicilia</h3><p>Finanziamenti regionali per imprese siciliane.</p></a>
-      <a class="card" href="/regione-sicilia.html"><h3>Bandi Regione Sicilia</h3><p>Agevolazioni per turismo, agricoltura e innovazione.</p></a>
+    <div class="bandi-container">
+      <a class="bando-card" href="/resto-al-sud.html">Resto al Sud</a>
+      <a class="bando-card" href="/smartstart.html">Smart&Start Italia</a>
+      <a class="bando-card" href="/nuova-sabatini.html">Nuova Sabatini</a>
+      <a class="bando-card" href="/on-tasso-zero.html">ON - Tasso Zero</a>
+      <a class="bando-card" href="/cultura-crea.html">Cultura Crea</a>
+      <a class="bando-card" href="/irfis.html">Bandi IRFIS FinSicilia</a>
+      <a class="bando-card" href="/regione-sicilia.html">Bandi Regione Sicilia</a>
     </div>
   </section>
 
@@ -319,10 +338,11 @@
       <input type="text" name="settore" placeholder="Settore azienda"><br>
       <button type="submit">INVIA RICHIESTA</button>
     </form>
-    <div class="social">
-      <a href="https://www.linkedin.com/in/alessandro-mamone/" class="linkedin" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-      <a href="https://www.instagram.com" class="instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://wa.me/393662460159" class="whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+
+    <div class="social-buttons">
+      <a href="https://www.linkedin.com/in/alessandro-mamone/" class="btn-social linkedin" target="_blank"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+      <a href="https://www.instagram.com" class="btn-social instagram" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+      <a href="https://wa.me/393662460159" class="btn-social whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
     </div>
   </section>
 
@@ -332,7 +352,7 @@
 
   <!-- COOKIE BANNER -->
   <div id="cookie" style="display:none;">
-    <span>Questo sito utilizza cookie tecnici per migliorare l’esperienza utente. <a href="/privacy.html" style="color:var(--giallo)">Privacy & Cookie Policy</a></span>
+    <span>Questo sito utilizza cookie tecnici per migliorare l’esperienza utente. <a href="/privacy.html">Privacy & Cookie Policy</a></span>
     <button id="acceptCookie">Accetta</button>
   </div>
 
@@ -347,5 +367,6 @@
       });
     });
   </script>
+
 </body>
 </html>
