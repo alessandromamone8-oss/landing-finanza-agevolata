@@ -4,65 +4,179 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Consulenza Finanza Agevolata Palermo | Alessandro Mamone</title>
-  <meta name="description" content="Consulenza professionale in finanza agevolata per startup e PMI in Sicilia e Sud Italia. Supporto per Resto al Sud, Smart&Start, Nuova Sabatini, IRFIS e bandi regionali. Prenota ora la tua consulenza gratuita.">
+  <meta name="description" content="Consulenza in finanza agevolata per startup e PMI in Sicilia e Sud Italia. Supporto per Resto al Sud, Smart&Start, Nuova Sabatini, IRFIS e bandi regionali.">
   <meta name="author" content="Alessandro Mamone Business Plan">
   <link rel="canonical" href="https://www.finanzapmi.it/">
 
-  <!-- SEO -->
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#2341e1">
 
   <!-- Sicurezza HTTPS -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: blob:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdnjs.cloudflare.com; img-src 'self' https: data:; connect-src *;">
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' https: data:;
+                 style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
+                 font-src https://fonts.gstatic.com;
+                 img-src 'self' https: data:;
+                 connect-src https://formspree.io https://api.whatsapp.com;
+                 script-src 'self';">
 
-  <!-- Performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-bxKQxHBe6XnBIlfQsxNHD3m8E/C4ut+vCwlg+K0FUZ+uQx/gkoyYoQSrBIF+L7h8FQzAYr3+zP6a9tB7FUzA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- Favicon -->
   <link rel="icon" type="image/png" href="img/logo.jpg">
 
   <style>
     :root {
-      --blu: #2341e1; --azzurro: #739da4; --giallo: #ffd21b; --scuro: #0f111a; --bianco: #ffffff;
+      --blu: #2341e1;
+      --azzurro: #739da4;
+      --giallo: #ffd21b;
+      --scuro: #0f111a;
+      --bianco: #ffffff;
+      --grigio: #1c1f2b;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--scuro); color: var(--bianco); line-height: 1.6; scroll-behavior: smooth; }
-    @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
-    .fade-in { opacity: 0; transform: translateY(30px); transition: all 1s ease-out; }
-    .fade-in.visible { opacity: 1; transform: translateY(0); }
-    .header { background: var(--blu); display: flex; justify-content: space-between; align-items: center; padding: 16px 28px; color: var(--bianco); font-weight: 600; letter-spacing: 0.5px; position: sticky; top: 0; z-index: 100; }
-    .header .left { font-size: 1.2rem; font-weight: 700; }
-    nav a { margin-left: 18px; color: var(--bianco); text-decoration: none; transition: color 0.3s ease; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--scuro);
+      color: var(--bianco);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: var(--blu);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header img { height: 42px; border-radius: 8px; }
+    nav a {
+      color: var(--bianco);
+      text-decoration: none;
+      margin-left: 16px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
     nav a:hover { color: var(--giallo); }
-    .hero-sub { background: linear-gradient(135deg, var(--blu), var(--azzurro)); color: var(--giallo); padding: 70px 20px; text-align: center; }
-    .hero-sub h1 { font-family: 'Anton', sans-serif; font-size: 2.6rem; margin-bottom: 16px; display: inline-block; border: 2px solid var(--bianco); padding: 10px 20px; border-radius: 8px; }
-    .hero-sub p { color: var(--bianco); font-size: 1.1rem; max-width: 800px; margin: auto; line-height: 1.6; }
-    .lead-form { max-width: 720px; margin: 60px auto; padding: 30px; background: #1c1f2b; border-radius: 12px; text-align: center; box-shadow: 0 0 20px rgba(0,0,0,0.3); }
-    .lead-form h2 { color: var(--giallo); margin-bottom: 10px; }
-    .lead-form p { color: #ddd; margin-bottom: 20px; }
-    .lead-form input { width: 90%; padding: 12px; margin: 10px 0; border: 1px solid #555; border-radius: 8px; background: #2a2d3c; color: var(--bianco); }
-    .lead-form button { background: var(--giallo); color: var(--bianco); padding: 12px 24px; border-radius: 8px; border: none; font-weight: 700; cursor: pointer; transition: background 0.3s ease; margin-top: 10px; }
-    .lead-form button:hover { background: #ffe24f; color: var(--bianco); }
-    .social-buttons { display: flex; justify-content: center; gap: 16px; margin-top: 24px; flex-wrap: wrap; }
-    .btn-social { display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; border-radius: 8px; font-weight: 700; text-decoration: none; color: #fff; transition: background 0.3s ease; }
-    .btn-social i { font-size: 18px; }
-    .btn-social.instagram { background: linear-gradient(45deg, #fd5949, #d6249f, #285AEB); }
-    .btn-social.linkedin { background: #0077b5; }
-    .btn-social.whatsapp { background: #25D366; }
-    .btn-social:hover { opacity: 0.85; }
-    footer { background: var(--blu); color: var(--bianco); text-align: center; padding: 20px; margin-top: 40px; font-size: 14px; }
-    @media(max-width:800px) { .header { flex-direction: column; gap: 10px; text-align: center; } nav a { margin: 0 10px; } }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, var(--blu), var(--azzurro));
+    }
+    .hero h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: var(--bianco);
+      border: 2px solid var(--bianco);
+      display: inline-block;
+      padding: 12px 24px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      color: var(--bianco);
+      font-size: 1.1rem;
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+    /* ---- Bandi Section ---- */
+    #bandi {
+      background: var(--grigio);
+      padding: 60px 20px;
+      text-align: center;
+    }
+    #bandi h2 {
+      color: var(--giallo);
+      margin-bottom: 30px;
+      font-size: 1.8rem;
+    }
+    .bandi-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+    }
+    .bandi-grid a {
+      background: var(--blu);
+      color: var(--bianco);
+      padding: 14px 22px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    .bandi-grid a:hover {
+      background: var(--giallo);
+      color: var(--scuro);
+    }
+
+    /* ---- Form ---- */
+    .lead-form {
+      max-width: 720px;
+      margin: 60px auto;
+      padding: 30px;
+      background: #1c1f2b;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+    .lead-form h2 {
+      color: var(--giallo);
+      margin-bottom: 10px;
+    }
+    .lead-form p {
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+    .lead-form input {
+      width: 90%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #555;
+      border-radius: 8px;
+      background: #2a2d3c;
+      color: var(--bianco);
+    }
+    .lead-form button {
+      background: var(--giallo);
+      color: var(--bianco);
+      padding: 12px 24px;
+      border-radius: 8px;
+      border: none;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      margin-top: 10px;
+    }
+    .lead-form button:hover { background: #ffe24f; }
+
+    footer {
+      background: var(--blu);
+      color: var(--bianco);
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    @media(max-width:800px) {
+      header { flex-direction: column; gap: 10px; text-align: center; }
+      nav a { margin: 0 10px; }
+      .hero h1 { font-size: 1.8rem; }
+    }
   </style>
 </head>
 
 <body>
-  <header class="header fade-in">
-    <div class="left">Alessandro Mamone</div>
+
+  <header>
+    <img src="img/logo.jpg" alt="Logo Alessandro Mamone">
     <nav>
       <a href="#bandi">Bandi</a>
       <a href="#form">Contatti</a>
@@ -70,41 +184,39 @@
     </nav>
   </header>
 
-  <section class="hero-sub fade-in">
+  <section class="hero">
     <h1>Consulenza Finanza Agevolata — Palermo & Sud Italia</h1>
     <p>Supporto completo per accedere a fondi pubblici e regionali: <strong>Resto al Sud, Smart&Start, Nuova Sabatini, IRFIS</strong> e bandi Regione Sicilia.</p>
   </section>
 
-  <section class="lead-form fade-in" id="form">
-    <h2>Richiedi una Consulenza Gratuita</h2>
-    <p>Compila il form e ricevi una prima valutazione gratuita per la tua impresa.</p>
-    <form action="https://formspree.io/f/xzzawvob" method="POST">
-      <input type="text" name="nome" placeholder="Nome e Cognome" required>
-      <input type="email" name="email" placeholder="Email" required>
-      <input type="tel" name="telefono" placeholder="Telefono" required>
-      <input type="text" name="settore" placeholder="Settore azienda">
-      <button type="submit">INVIA RICHIESTA</button>
-    </form>
-
-    <div class="social-buttons fade-in">
-      <a href="https://www.linkedin.com/in/alessandro-mamone/" class="btn-social linkedin" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
-      <a href="https://wa.me/393662460159" class="btn-social whatsapp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-      <a href="https://www.instagram.com" class="btn-social instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> Instagram</a>
+  <section id="bandi">
+    <h2>Bandi Attivi</h2>
+    <div class="bandi-grid">
+      <a href="resto-al-sud.html">Resto al Sud</a>
+      <a href="smartstart.html">Smart&Start</a>
+      <a href="nuova-sabatini.html">Nuova Sabatini</a>
+      <a href="on-tasso-zero.html">ON - Tasso Zero</a>
+      <a href="regione-sicilia.html">Regione Sicilia</a>
+      <a href="cultura-crea.html">Cultura Crea</a>
+      <a href="irfis.html">IRFIS</a>
     </div>
   </section>
 
+  <section class="lead-form" id="form">
+    <h2>Richiedi una Consulenza Gratuita</h2>
+    <p>Compila il form per ricevere una prima valutazione gratuita del tuo progetto.</p>
+    <form action="https://formspree.io/f/xzzawvob" method="POST">
+      <input type="text" name="nome" placeholder="Nome e Cognome" required><br>
+      <input type="email" name="email" placeholder="Email" required><br>
+      <input type="tel" name="telefono" placeholder="Telefono" required><br>
+      <input type="text" name="settore" placeholder="Settore azienda"><br>
+      <button type="submit">INVIA RICHIESTA</button>
+    </form>
+  </section>
+
   <footer>
-    © 2025 Alessandro Mamone Business Plan — Finanza Agevolata Palermo & Sud Italia. Tutti i diritti riservati.
+    © 2025 Alessandro Mamone — Finanza Agevolata Palermo & Sud Italia. Tutti i diritti riservati.
   </footer>
 
-  <script>
-    const fadeEls = document.querySelectorAll('.fade-in');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
-      });
-    }, { threshold: 0.2 });
-    fadeEls.forEach(el => observer.observe(el));
-  </script>
 </body>
 </html>
