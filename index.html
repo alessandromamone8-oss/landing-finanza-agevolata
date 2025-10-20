@@ -1,251 +1,350 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Consulenza Finanza Agevolata Palermo | Alessandro Mamone</title>
-  <meta name="description" content="Consulenza professionale in finanza agevolata a Palermo e Sud Italia. Supporto per Resto al Sud, Smart&Start, Nuova Sabatini, IRFIS e bandi regionali. Prenota la tua consulenza gratuita.">
-  <meta name="keywords" content="finanza agevolata Palermo, bandi Sicilia, Resto al Sud, Smart&Start, Nuova Sabatini, IRFIS, consulenza startup, business plan, Alessandro Mamone">
+  <meta name="description" content="Consulenza professionale in finanza agevolata per startup e PMI in Sicilia e Sud Italia. Supporto per Resto al Sud, Smart&Start, Nuova Sabatini, IRFIS e bandi regionali. Prenota ora la tua consulenza gratuita.">
+  <meta name="keywords" content="finanza agevolata Palermo, Resto al Sud, Smart&Start, IRFIS, Nuova Sabatini, bandi Sicilia, Alessandro Mamone, business plan, consulente imprese, startup, incentivi, contributi">
   <meta name="author" content="Alessandro Mamone Business Plan">
   <link rel="canonical" href="https://www.finanzapmi.it/">
+  
   <!-- Open Graph -->
   <meta property="og:title" content="Consulenza Finanza Agevolata Palermo | Alessandro Mamone">
-  <meta property="og:description" content="Accedi ai principali incentivi per startup e PMI: Resto al Sud, Smart&Start, Nuova Sabatini, IRFIS e bandi Regione Sicilia. Prenota consulenza gratuita.">
-  <meta property="og:type" content="website">
+  <meta property="og:description" content="Accedi a fondi PNRR, Smart&Start, Resto al Sud e bandi IRFIS con consulenza personalizzata.">
+  <meta property="og:image" content="https://www.finanzapmi.it/img/logo.png">
   <meta property="og:url" content="https://www.finanzapmi.it/">
-  <meta property="og:image" content="https://www.finanzapmi.it/img/mamone.jpg">
+  <meta property="og:type" content="website">
 
-  <!-- Twitter card -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Consulenza Finanza Agevolata Palermo | Alessandro Mamone">
-  <meta name="twitter:description" content="Supporto per ottenere fondi PNRR, Smart&Start, Resto al Sud e bandi regionali. Prenota la tua consulenza gratuita.">
+  <meta name="twitter:description" content="Consulenza in finanza agevolata per imprese e startup. Prenota la tua consulenza gratuita.">
+  <meta name="twitter:image" content="https://www.finanzapmi.it/img/logo.png">
 
-  <!-- Fonts & icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-  <!-- main stylesheet (relative path) -->
-  <link rel="stylesheet" href="/style.css">
-
-  <!-- Structured data: LocalBusiness -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Alessandro Mamone Business Plan",
-    "url": "https://www.finanzapmi.it/",
-    "logo": "https://www.finanzapmi.it/img/mamone.jpg",
-    "description": "Consulenza in finanza agevolata per imprese e startup in Sicilia e Sud Italia. Supporto per Resto al Sud, Smart&Start, Nuova Sabatini, IRFIS e bandi regionali.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Palermo",
-      "addressRegion": "Sicilia",
-      "addressCountry": "IT"
-    },
-    "telephone": "+393662460159",
-    "sameAs": [
-      "https://www.linkedin.com/in/alessandro-mamone/",
-      "https://www.instagram.com/",
-      "https://wa.me/393662460159"
-    ]
-  }
-  </script>
+  <link rel="icon" type="image/png" href="/img/logo.png">
 
   <style>
-    /* Inlined base visual improvements (kept minimal; full styling in style.css) */
-    :root{--blu:#2341e1;--azzurro:#739da4;--giallo:#ffd21b}
-    body{font-family:Inter,Segoe UI,system-ui,Arial,sans-serif;background:#f5f8fb;color:#222;margin:0}
-    .topbar{background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.06);display:flex;align-items:center;justify-content:space-between;padding:14px 22px;gap:10px;position:sticky;top:0;z-index:60}
-    .logo{font-family:Anton, sans-serif;color:var(--blu);font-size:1.2rem;text-decoration:none}
-    nav.desktop{display:flex;gap:18px;align-items:center}
-    nav.desktop a{color:#333;font-weight:600;text-decoration:none}
-    .hero{display:grid;grid-template-columns:1fr 460px;gap:30px;align-items:center;padding:80px 40px;background:linear-gradient(135deg,var(--blu),var(--azzurro));color:#fff}
-    .hero h1{font-family:Anton, sans-serif;color:var(--giallo);font-size:2.4rem;margin:0 0 12px}
-    .hero p{font-size:1.05rem;max-width:680px;margin:0 0 20px}
-    .btn-primary{background:linear-gradient(135deg,var(--blu),#3b54ff);color:#fff;padding:14px 28px;border-radius:999px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:12px;box-shadow:0 8px 24px rgba(35,65,225,0.18)}
-    .hero-image{border-radius:18px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,0.25)}
-    .services{display:flex;flex-wrap:wrap;gap:18px;justify-content:center;padding:36px 24px}
-    .service-card{background:#fff;padding:22px;border-radius:12px;max-width:320px;box-shadow:0 10px 30px rgba(0,0,0,0.06);text-align:center}
-    .service-card h3{font-family:Anton, sans-serif;color:var(--blu);margin:8px 0}
-    .bandi-section{padding:48px 24px;background:#fff}
-    .bandi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;max-width:1200px;margin:20px auto}
-    .bandi-card{background:#f9fbfd;padding:18px;border-radius:12px;text-decoration:none;color:#222;display:block;border-left:6px solid transparent;transition:all .22s}
-    .bandi-card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(0,0,0,0.08)}
-    .bandi-card h4{font-family:Anton, sans-serif;color:var(--blu);margin:6px 0}
-    .lead{max-width:720px;margin:36px auto;padding:26px;background:#fff;border-radius:12px;box-shadow:0 12px 30px rgba(0,0,0,0.06);text-align:center}
-    .lead input{width:92%;padding:12px;margin:10px 0;border-radius:8px;border:1px solid #e0e6ef}
-    .lead button{background:var(--blu);color:#fff;padding:12px 22px;border-radius:10px;border:none;font-weight:700}
-    .social-inline{display:flex;gap:10px;justify-content:center;margin-top:14px}
-    .social-circle{width:44px;height:44px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:18px;text-decoration:none}
-    .linkedin{background:#0077B5}
-    .instagram{background:linear-gradient(45deg,#fd5949,#d6249f,#285AEB)}
-    .whatsapp{background:#25D366}
-    footer{background:var(--blu);color:#fff;padding:22px;text-align:center;margin-top:40px}
-    .floating-ws{position:fixed;right:20px;bottom:22px;background:#25D366;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,0.2);z-index:70}
-    .floating-book{position:fixed;right:92px;bottom:22px;background:linear-gradient(135deg,var(--blu),var(--azzurro));color:#fff;padding:12px 18px;border-radius:999px;box-shadow:0 10px 30px rgba(0,0,0,0.18);text-decoration:none;font-weight:700;z-index:70}
-    /* Cookie */
-    #cookie {position:fixed;left:0;right:0;bottom:0;background:var(--blu);color:#fff;padding:14px;display:flex;justify-content:space-between;gap:10px;align-items:center;z-index:100}
-    #cookie a{color:var(--giallo);text-decoration:underline}
-    #cookie button{background:var(--giallo);color:var(--blu);border:none;padding:10px 16px;border-radius:8px;font-weight:700}
-    @media(max-width:900px){
-      .hero{grid-template-columns:1fr;padding:46px 20px}
-      .hero-image{order:-1;margin-bottom:18px}
-      nav.desktop{display:none}
+    :root {
+      --blu: #2341e1;
+      --azzurro: #739da4;
+      --giallo: #ffd21b;
+      --testo: #1e1e1e;
+      --sfondo: #f7f9fc;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--sfondo);
+      color: var(--testo);
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 2px solid var(--blu);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header img {
+      height: 48px;
+    }
+
+    nav a {
+      margin: 0 14px;
+      text-decoration: none;
+      color: var(--blu);
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      color: var(--giallo);
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 70px 30px;
+      background: linear-gradient(135deg, var(--blu), var(--azzurro));
+      color: #fff;
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero-text h1 {
+      font-size: 2.3rem;
+      color: var(--giallo);
+      margin-bottom: 12px;
+    }
+
+    .hero-text p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      color: rgba(255,255,255,0.92);
+    }
+
+    .cta-buttons {
+      margin-top: 25px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary {
+      background: var(--giallo);
+      color: var(--blu);
+    }
+
+    .btn-primary:hover {
+      background: #ffce00;
+    }
+
+    .btn-outline {
+      border: 2px solid #fff;
+      color: #fff;
+    }
+
+    .btn-outline:hover {
+      background: #fff;
+      color: var(--blu);
+    }
+
+    .services, .bandi {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .services h2, .bandi h2 {
+      color: var(--blu);
+      font-size: 1.8rem;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .service-grid, .bandi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: var(--blu);
+      margin-bottom: 10px;
+    }
+
+    .lead-form {
+      text-align: center;
+      padding: 50px 20px;
+      background: #fff;
+      border-radius: 12px;
+      margin: 50px auto;
+      max-width: 700px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    }
+
+    .lead-form input {
+      width: 85%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .lead-form button {
+      background: var(--blu);
+      color: #fff;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .lead-form button:hover {
+      background: #1c34b5;
+    }
+
+    .social {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .social a {
+      width: 42px;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 20px;
+      transition: 0.3s;
+    }
+
+    .linkedin { background: #0077B5; }
+    .instagram { background: linear-gradient(45deg,#fd5949,#d6249f,#285AEB); }
+    .whatsapp { background: #25D366; }
+
+    .social a:hover {
+      opacity: 0.8;
+    }
+
+    footer {
+      background: var(--blu);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      font-size: 0.9rem;
+    }
+
+    /* Cookie banner */
+    #cookie {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--blu);
+      color: #fff;
+      padding: 12px 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 200;
+      font-size: 0.9rem;
+    }
+
+    #cookie button {
+      background: var(--giallo);
+      color: var(--blu);
+      border: none;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
     }
   </style>
 </head>
 
 <body>
-  <!-- Top navigation -->
-  <div class="topbar" role="navigation" aria-label="Main navigation">
-    <a class="logo" href="/index.html">ALESSANDRO MAMONE</a>
-    <nav class="desktop" aria-label="Main menu">
-      <a href="/index.html">Home</a>
-      <a href="/index.html#bandi">Bandi</a>
-      <a href="/index.html#form">Contatti</a>
-      <a href="/irfis.html" title="IRFIS FinSicilia">IRFIS</a>
+
+  <header>
+    <img src="/img/logo.png" alt="Logo Alessandro Mamone">
+    <nav>
+      <a href="#bandi">Bandi</a>
+      <a href="#form">Contatti</a>
+      <a href="/irfis.html">IRFIS</a>
     </nav>
-    <div style="display:flex;gap:10px;align-items:center">
-      <a class="social-circle linkedin" href="https://www.linkedin.com/in/alessandro-mamone/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-      <a class="social-circle instagram" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Consulenza Finanza Agevolata — Palermo & Sud Italia</h1>
+      <p>Supporto completo per accedere a fondi pubblici e regionali: <strong>Resto al Sud, Smart&Start, Nuova Sabatini, IRFIS</strong> e bandi Regione Sicilia.</p>
+      <div class="cta-buttons">
+        <a href="#form" class="btn btn-primary"><i class="fa-solid fa-calendar-check"></i> Prenota Consulenza</a>
+        <a href="https://wa.me/393662460159" class="btn btn-outline" target="_blank"><i class="fa-brands fa-whatsapp"></i> Scrivimi su WhatsApp</a>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Hero -->
-  <main>
-    <section class="hero" aria-labelledby="hero-title">
-      <div>
-        <h1 id="hero-title">Consulenza Finanza Agevolata — Palermo & Sud Italia</h1>
-        <p>Supportiamo startup, PMI e professionisti ad accedere a fondi pubblici e regionali: <strong>Resto al Sud, Smart&Start, Nuova Sabatini, IRFIS</strong> e bandi Regione Sicilia. Pianificazione, business plan e gestione domanda.</p>
+  <section class="services">
+    <h2>Servizi Principali</h2>
+    <div class="service-grid">
+      <div class="card"><h3>PNRR & Fondi UE</h3><p>Strategia e gestione per ottenere fondi europei e PNRR per la tua impresa.</p></div>
+      <div class="card"><h3>Smart&Start & Resto al Sud</h3><p>Assistenza completa per accedere ai principali incentivi per startup e PMI.</p></div>
+      <div class="card"><h3>Bandi IRFIS & Regionali</h3><p>Finanziamenti e contributi specifici per le imprese siciliane.</p></div>
+    </div>
+  </section>
 
-        <p>
-          <a href="#form" class="btn-primary"><i class="fa-solid fa-circle-check"></i>&nbsp;Verifica la tua idoneità</a>
-          &nbsp;&nbsp;
-          <a href="/irfis.html" class="btn-primary" style="background:var(--giallo);color:var(--blu);box-shadow:none">Approfondisci IRFIS</a>
-        </p>
+  <section class="bandi" id="bandi">
+    <h2>Strumenti di Finanza Agevolata Attivi</h2>
+    <div class="bandi-grid">
+      <a class="card" href="/resto-al-sud.html"><h3>Resto al Sud</h3><p>Contributo a fondo perduto per investimenti nel Mezzogiorno.</p></a>
+      <a class="card" href="/smartstart.html"><h3>Smart&Start Italia</h3><p>Finanziamenti fino a 1,5M€ per startup innovative.</p></a>
+      <a class="card" href="/nuova-sabatini.html"><h3>Nuova Sabatini</h3><p>Agevolazione per acquisto di macchinari e tecnologie.</p></a>
+      <a class="card" href="/on-tasso-zero.html"><h3>ON - Tasso Zero</h3><p>Finanziamenti per giovani e donne che avviano nuove imprese.</p></a>
+      <a class="card" href="/cultura-crea.html"><h3>Cultura Crea</h3><p>Supporto per progetti culturali e turistici nel Sud Italia.</p></a>
+      <a class="card" href="/irfis.html"><h3>Bandi IRFIS FinSicilia</h3><p>Finanziamenti regionali per imprese siciliane.</p></a>
+      <a class="card" href="/regione-sicilia.html"><h3>Bandi Regione Sicilia</h3><p>Agevolazioni per turismo, agricoltura e innovazione.</p></a>
+    </div>
+  </section>
 
-        <p style="margin-top:18px;font-size:.95rem;color:rgba(255,255,255,0.92)">
-          Prenota una consulenza gratuita: <strong>call, video o incontro in sede</strong>. Prenota ora o scrivici su WhatsApp.
-        </p>
-      </div>
-
-      <div class="hero-image" aria-hidden="true">
-        <img src="/img/mamone.jpg" alt="Alessandro Mamone - Consulente finanza agevolata" style="display:block;width:100%;height:auto">
-      </div>
-    </section>
-
-    <!-- Core services -->
-    <section class="services" aria-labelledby="services-title">
-      <div class="service-card" role="article" aria-labelledby="s1">
-        <h3 id="s1">PNRR & Fondi Europei</h3>
-        <p>Analisi, progettazione e gestione per accedere a fondi PNRR e linee europee.</p>
-      </div>
-      <div class="service-card" role="article" aria-labelledby="s2">
-        <h3 id="s2">Smart&Start & Resto al Sud</h3>
-        <p>Supporto completo per startup innovative e imprese che investono nel Sud.</p>
-      </div>
-      <div class="service-card" role="article" aria-labelledby="s3">
-        <h3 id="s3">Bandi Regionali & IRFIS</h3>
-        <p>Individuazione dei bandi più efficaci in Sicilia e gestione pratica fino all'erogazione.</p>
-      </div>
-    </section>
-
-    <!-- Bandi (cards linking to subpages — RELATIVE LINKS) -->
-    <section class="bandi-section" aria-labelledby="bandi">
-      <div style="max-width:1100px;margin:0 auto;padding:6px 12px">
-        <h2 id="bandi" style="margin:0 0 8px">Strumenti di Finanza Agevolata Attivi</h2>
-        <p style="margin:0 0 18px;color:#444">Seleziona il bando per leggere requisiti, spese ammissibili e come presentare domanda.</p>
-
-        <div class="bandi-grid">
-          <a class="bandi-card" href="/resto-al-sud.html" title="Resto al Sud - dettaglio">
-            <h4>Resto al Sud</h4>
-            <p>Contributo a fondo perduto e finanziamento agevolato per investimenti nel Mezzogiorno.</p>
-          </a>
-
-          <a class="bandi-card" href="/smartstart.html" title="Smart&Start Italia - dettaglio">
-            <h4>Smart&Start Italia</h4>
-            <p>Incentivi per startup innovative con finanziamenti fino a 1,5M€.</p>
-          </a>
-
-          <a class="bandi-card" href="/nuova-sabatini.html" title="Nuova Sabatini - dettaglio">
-            <h4>Nuova Sabatini</h4>
-            <p>Sostegno per l’acquisto di macchinari, tecnologie e software per le PMI.</p>
-          </a>
-
-          <a class="bandi-card" href="/on-tasso-zero.html" title="ON - Nuove Imprese a Tasso Zero - dettaglio">
-            <h4>ON - Nuove Imprese a Tasso Zero</h4>
-            <p>Finanziamenti agevolati per giovani e donne imprenditrici.</p>
-          </a>
-
-          <a class="bandi-card" href="/cultura-crea.html" title="Cultura Crea - dettaglio">
-            <h4>Cultura Crea</h4>
-            <p>Sostegno a progetti culturali e turistici nel Sud Italia.</p>
-          </a>
-
-          <a class="bandi-card" href="/irfis.html" title="IRFIS FinSicilia - dettaglio">
-            <h4>Bandi IRFIS FinSicilia</h4>
-            <p>Finanziamenti regionali e strumenti specifici per imprese siciliane.</p>
-          </a>
-
-          <a class="bandi-card" href="/regione-sicilia.html" title="Bandi Regione Sicilia - dettaglio">
-            <h4>Bandi Regione Sicilia</h4>
-            <p>Panoramica bandi regionali per turismo, agricoltura, innovazione e sviluppo locale.</p>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Lead form -->
-    <section id="form" class="lead" aria-labelledby="form-title">
-      <h2 id="form-title">Verifica la tua idoneità in 1 minuto</h2>
-      <p>Compila il form e ricevi una prima valutazione gratuita. Oppure prenota subito una consulenza.</p>
-      <form action="https://formspree.io/f/xzzawvob" method="POST" style="margin-top:12px">
-        <input type="text" name="nome" placeholder="Nome e Cognome" required aria-label="Nome e cognome"><br>
-        <input type="email" name="email" placeholder="Email" required aria-label="Email"><br>
-        <input type="tel" name="telefono" placeholder="Telefono" required aria-label="Telefono"><br>
-        <input type="text" name="settore" placeholder="Settore azienda" aria-label="Settore azienda"><br>
-        <input type="text" name="interesse" placeholder="Interesse bandi" aria-label="Interesse bandi"><br>
-        <button type="submit">INVIA RICHIESTA</button>
-      </form>
-
-      <div class="social-inline" aria-label="Social links">
-        <a class="social-circle linkedin" href="https://www.linkedin.com/in/alessandro-mamone/" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-linkedin-in"></i></a>
-        <a class="social-circle instagram" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-instagram"></i></a>
-        <a class="social-circle whatsapp" href="https://wa.me/393662460159?text=Salve%20Alessandro,%20vorrei%20prenotare%20una%20consulenza." target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-whatsapp"></i></a>
-      </div>
-    </section>
-  </main>
+  <section class="lead-form" id="form">
+    <h2>Richiedi una Consulenza Gratuita</h2>
+    <p>Compila il form e ricevi una prima valutazione gratuita per la tua impresa.</p>
+    <form action="https://formspree.io/f/xzzawvob" method="POST">
+      <input type="text" name="nome" placeholder="Nome e Cognome" required><br>
+      <input type="email" name="email" placeholder="Email" required><br>
+      <input type="tel" name="telefono" placeholder="Telefono" required><br>
+      <input type="text" name="settore" placeholder="Settore azienda"><br>
+      <button type="submit">INVIA RICHIESTA</button>
+    </form>
+    <div class="social">
+      <a href="https://www.linkedin.com/in/alessandro-mamone/" class="linkedin" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com" class="instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://wa.me/393662460159" class="whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+  </section>
 
   <footer>
-    <p>© 2025 Alessandro Mamone Business Plan — Finanza Agevolata Palermo &amp; Sud Italia. Tutti i diritti riservati.</p>
+    <p>© 2025 Alessandro Mamone Business Plan — Finanza Agevolata Palermo & Sud Italia. Tutti i diritti riservati.</p>
   </footer>
 
-  <!-- Floating quick actions -->
-  <a class="floating-book" href="https://calendar.app.google/6QjruiQZVCrxAFGM7" target="_blank" rel="noopener noreferrer" aria-label="Prenota consulenza">📅 Prenota Ora</a>
-  <a class="floating-ws" href="https://wa.me/393662460159" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp chat"><i class="fa-brands fa-whatsapp" style="font-size:20px"></i></a>
-
-  <!-- Cookie - minimal -->
-  <div id="cookie" role="dialog" aria-live="polite" style="display:none">
-    <div style="flex:1">Questo sito utilizza cookie tecnici per funzionamento e analisi. <a href="/privacy.html">Privacy & Cookies</a></div>
-    <div style="flex:0"><button id="cookie-accept">Accetta</button></div>
+  <!-- COOKIE BANNER -->
+  <div id="cookie" style="display:none;">
+    <span>Questo sito utilizza cookie tecnici per migliorare l’esperienza utente. <a href="/privacy.html" style="color:var(--giallo)">Privacy & Cookie Policy</a></span>
+    <button id="acceptCookie">Accetta</button>
   </div>
 
   <script>
-    // Cookie simple storage
-    document.addEventListener('DOMContentLoaded', function(){
-      try {
-        if(!localStorage.getItem('mamone_cookie')) {
-          document.getElementById('cookie').style.display = 'flex';
-        }
-      } catch(e){}
-      var accept = document.getElementById('cookie-accept');
-      if(accept){
-        accept.addEventListener('click', function(){
-          try { localStorage.setItem('mamone_cookie','accepted'); } catch(e){}
-          document.getElementById('cookie').style.display='none';
-        });
+    document.addEventListener("DOMContentLoaded", function(){
+      if(!localStorage.getItem("cookieAccepted")){
+        document.getElementById("cookie").style.display="flex";
       }
+      document.getElementById("acceptCookie").addEventListener("click", function(){
+        localStorage.setItem("cookieAccepted", true);
+        document.getElementById("cookie").style.display="none";
+      });
     });
   </script>
 </body>
