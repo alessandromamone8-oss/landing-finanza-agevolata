@@ -1,263 +1,275 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mamone Business Plan | Finanza Agevolata & Consulenza Startup</title>
-  <meta name="description" content="Prenota una consulenza con Mamone Business Plan. Supporto per fondi PNRR, Resto al Sud e Smart&Start in Sicilia e Sud Italia.">
-  <meta name="keywords" content="finanza agevolata Palermo, consulenza startup, business plan, PNRR, Resto al Sud, Invitalia, Sicilia, Smart&Start">
-  <meta name="author" content="Mamone.BusinessPlan">
-  <meta property="og:title" content="Mamone Business Plan | Finanza Agevolata Palermo">
-  <meta property="og:description" content="Consulenza e supporto per fondi PNRR, Resto al Sud, Smart&Start e bandi regionali. Prenota ora.">
-  <meta property="og:image" content="img/mamone.jpg">
-  <meta property="og:type" content="website">
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-
-  <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alessandro Mamone | Consulenza Finanza Agevolata</title>
+  <meta name="description" content="Consulenza Finanza Agevolata Palermo e Sud Italia. Accedi ai fondi PNRR, Smart&Start e Resto al Sud con Alessandro Mamone.">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
   <style>
-  *{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;}
-  body{font-family:'Open Sans',sans-serif;background:#f4f7fb;color:#333;}
-
-  /* NAVBAR */
-  nav {
-    position:fixed;top:0;left:0;right:0;
-    display:flex;justify-content:space-between;align-items:center;
-    padding:15px 35px;background:#2341e1;color:white;z-index:1000;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  :root {
+    --blu: #2341e1;
+    --azzurro: #739da4;
+    --giallo: #ffd21b;
   }
-  .logo {font-family:'Anton',sans-serif;font-size:1.4em;color:#ffd21b;}
-  nav ul {list-style:none;display:flex;gap:20px;}
-  nav ul li a {color:white;text-decoration:none;font-weight:600;transition:.3s;}
-  nav ul li a:hover {color:#ffd21b;}
-  .nav-cta {
-    background:#ffd21b;color:#2341e1;font-weight:bold;
-    padding:10px 20px;border-radius:8px;text-decoration:none;
-    transition:.3s;
-  }
-  .nav-cta:hover {background:#ffe35a;}
 
-  /* HERO */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f4f8; color: #333; scroll-behavior: smooth; }
+
+  /* ===== HERO ===== */
   .hero {
-    display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
-    background:linear-gradient(135deg,#2341e1,#739da4);
-    color:white;padding:120px 20px 80px;margin-top:60px;
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+    background: linear-gradient(135deg, var(--blu), var(--azzurro));
+    color: white; padding: 90px 20px;
   }
-  .hero-content {flex:1 1 400px;max-width:550px;padding:20px;}
+  .hero-content { flex: 1 1 400px; max-width: 550px; padding: 20px; }
   .hero-content h2 {
-    font-family:'Anton',sans-serif;font-size:2.5em;margin-bottom:15px;color:#ffd21b;
+    font-family: 'Anton', sans-serif;
+    font-size: 2.8em;
+    color: var(--giallo);
+    text-shadow: 1px 1px 0 var(--blu), 2px 2px 6px rgba(0,0,0,0.3);
+    -webkit-text-stroke: 0.8px var(--blu);
+    margin-bottom: 20px;
+    line-height: 1.2;
   }
-  .hero-content p {font-size:1.1em;margin-bottom:25px;}
-  .cta-button {
-    background:#ffd21b;color:#2341e1;font-weight:bold;
-    padding:16px 36px;border-radius:10px;font-size:1.1em;text-decoration:none;transition:.3s;
+  .hero-content p { font-size: 1.15em; margin-bottom: 30px; }
+
+  .btn-prenota {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--blu), #3b54ff);
+    color: #fff; font-weight: 600;
+    padding: 16px 36px; border-radius: 12px; font-size: 1.1em;
+    transition: 0.3s; box-shadow: 0 5px 15px rgba(35,65,225,0.3);
+    text-decoration: none;
   }
-  .cta-button:hover {background:#ffe35a;}
+  .btn-prenota:hover {
+    background: linear-gradient(135deg, #1c32b3, var(--blu));
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(35,65,225,0.4);
+  }
+
   .hero img {
-    flex:1 1 300px;max-width:420px;border-radius:20px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+    flex: 1 1 300px; max-width: 420px; border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
   }
 
-  /* SOCIAL BAR */
-  .social-bar {
-    display:flex;gap:15px;justify-content:center;margin-top:20px;
+  /* ===== SERVIZI ===== */
+  .services {
+    display: flex; flex-wrap: wrap; justify-content: center;
+    margin: 60px 20px; gap: 25px;
   }
-  .social-bar a {
-    color:white;font-size:1.6em;transition:.3s;
-  }
-  .social-bar a:hover {color:#ffd21b;}
-
-  /* SEZIONI */
-  section {padding:60px 20px;text-align:center;}
-  h2.section-title {
-    font-family:'Anton',sans-serif;color:#2341e1;font-size:2em;margin-bottom:20px;
-  }
-
-  .services {display:flex;flex-wrap:wrap;justify-content:center;gap:25px;}
   .service-box {
-    background:#fff;flex:1 1 280px;max-width:320px;
-    padding:30px;border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,0.08);
-    transition:.3s;
+    background: #fff; flex: 1 1 280px; max-width: 320px;
+    padding: 30px; border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08); text-align: center;
+    transition: 0.3s;
   }
-  .service-box:hover {transform:translateY(-5px);box-shadow:0 15px 35px rgba(0,0,0,0.12);}
-  .service-box h3 {font-family:'Anton',sans-serif;color:#2341e1;margin-bottom:10px;}
+  .service-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+  }
+  .service-box h3 {
+    font-family: 'Anton', sans-serif;
+    color: var(--blu);
+    font-size: 1.3em;
+    text-shadow: 1px 1px 0 var(--giallo);
+    -webkit-text-stroke: 0.3px var(--giallo);
+    margin-bottom: 10px;
+  }
+  .service-box p { color: #444; line-height: 1.6; }
 
-  /* FORM */
+  /* ===== ANIMAZIONE ===== */
+  .fade-in { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+  .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+  /* ===== FORM ===== */
   .lead-form {
-    background:#fff;max-width:550px;margin:60px auto;padding:40px;border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.08);text-align:center;
+    background: #fff; max-width: 550px; margin: 60px auto; padding: 40px;
+    border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    text-align: center;
   }
-  .lead-form h2 {font-family:'Anton',sans-serif;color:#2341e1;margin-bottom:25px;}
+  .lead-form h2 {
+    font-family: 'Anton', sans-serif;
+    color: var(--blu); margin-bottom: 25px; font-size: 1.8em;
+  }
   .lead-form input {
-    width:90%;padding:15px;margin:12px 0;border:1px solid #ccc;border-radius:10px;
+    width: 90%; padding: 15px; margin: 12px 0;
+    border: 1px solid #ccc; border-radius: 10px;
   }
   .lead-form button {
-    background:#2341e1;color:#fff;border:none;padding:15px 40px;border-radius:10px;
-    cursor:pointer;transition:.3s;font-size:1.1em;
+    background: var(--blu); color: #fff; border: none;
+    padding: 15px 40px; border-radius: 10px;
+    cursor: pointer; transition: 0.3s; font-size: 1.1em;
   }
-  .lead-form button:hover {background:#1c32b3;}
+  .lead-form button:hover { background: #1c32b3; }
 
-  /* FOOTER */
+  /* ===== SOCIAL ===== */
+  .social-links {
+    display: flex; justify-content: center; gap: 15px; margin-top: 30px;
+  }
+  .social-links a {
+    background: var(--blu); color: #fff; font-size: 1.4em;
+    width: 45px; height: 45px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    transition: 0.3s;
+  }
+  .social-links a:hover {
+    background: var(--giallo); color: var(--blu); transform: translateY(-3px);
+  }
+
+  /* ===== FOOTER ===== */
   footer {
-    background:#2341e1;color:white;text-align:center;padding:30px 10px;font-size:.9em;
-  }
-  footer .socials {margin-top:10px;}
-  footer .socials a {color:#ffd21b;margin:0 10px;font-size:1.3em;transition:.3s;}
-  footer .socials a:hover {color:#fff;}
-
-  /* WHATSAPP FLOAT */
-  .whatsapp-float {
-    position:fixed;bottom:20px;left:20px;background:#25D366;color:white;
-    border-radius:50%;padding:15px;font-size:1.8em;text-decoration:none;
-    box-shadow:0 4px 10px rgba(0,0,0,0.2);transition:.3s;z-index:999;
-  }
-  .whatsapp-float:hover {background:#1ebd5a;}
-
-  /* PRENOTA ORA BUTTON */
-  .prenota-float {
-    position:fixed;bottom:20px;right:20px;background:#ffd21b;color:#2341e1;
-    font-weight:bold;padding:14px 28px;border-radius:50px;
-    text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,0.2);
-    z-index:999;animation:pulse 2s infinite;transition:.3s;
-  }
-  .prenota-float:hover {background:#ffe35a;transform:scale(1.05);}
-  @keyframes pulse {
-    0%{box-shadow:0 0 0 0 rgba(255,210,27,0.5);}
-    70%{box-shadow:0 0 0 15px rgba(255,210,27,0);}
-    100%{box-shadow:0 0 0 0 rgba(255,210,27,0);}
+    background: var(--blu); color: #fff;
+    text-align: center; padding: 25px; font-size: 0.9em;
   }
 
-  /* COOKIE BANNER */
+  /* ===== PULSANTI FISSI ===== */
+  .whatsapp-btn {
+    position: fixed; bottom: 25px; right: 25px;
+    background: #25D366; color: white; font-size: 24px;
+    width: 58px; height: 58px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease; z-index: 999;
+  }
+  .whatsapp-btn:hover { background: #1ebe5c; transform: scale(1.08); }
+
+  .floating-prenota {
+    position: fixed; bottom: 95px; right: 25px;
+    background: linear-gradient(135deg, var(--blu), var(--azzurro));
+    color: #fff; font-weight: 600;
+    padding: 14px 26px; border-radius: 50px;
+    font-size: 1em; box-shadow: 0 5px 15px rgba(35,65,225,0.3);
+    text-decoration: none; transition: 0.3s; z-index: 998;
+  }
+  .floating-prenota:hover {
+    background: linear-gradient(135deg, #1c32b3, var(--blu));
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(35,65,225,0.4);
+  }
+
+  /* ===== COOKIE BANNER ===== */
   #cookie-banner {
-    position:fixed;bottom:0;left:0;right:0;background:#fff;
-    border-top:2px solid #2341e1;padding:20px;text-align:center;
-    box-shadow:0 -2px 10px rgba(0,0,0,0.1);z-index:9999;
-    display:none;
+    position: fixed; bottom: 0; left: 0; width: 100%;
+    background: var(--blu); color: white; padding: 20px;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; z-index: 1000;
   }
-  #cookie-banner p {margin-bottom:10px;color:#333;}
+  #cookie-banner p { margin: 0 10px 10px 0; flex: 1; }
   #cookie-banner button {
-    background:#2341e1;color:white;border:none;padding:10px 25px;border-radius:8px;
-    cursor:pointer;margin:0 10px;font-weight:bold;transition:.3s;
+    background: var(--giallo); color: var(--blu); border: none;
+    padding: 10px 20px; margin: 5px; border-radius: 8px;
+    font-weight: bold; cursor: pointer;
   }
-  #cookie-banner button:hover {background:#1c32b3;}
+  #cookie-banner button:hover { background: #ffe35a; }
 
   @media (max-width:768px) {
-    .hero {flex-direction:column;text-align:center;}
-    .hero img {margin-top:20px;}
-    nav ul {display:none;}
-    .prenota-float {padding:12px 22px;font-size:1em;}
+    .hero { flex-direction: column; text-align: center; }
+    .hero img { margin-top: 20px; }
+    .floating-prenota { bottom: 90px; right: 15px; padding: 12px 22px; font-size: 0.95em; }
   }
   </style>
 </head>
 <body>
 
-<!-- NAV -->
-<nav>
-  <div class="logo">Mamone.BusinessPlan</div>
-  <ul>
-    <li><a href="#servizi">Servizi</a></li>
-    <li><a href="#form">Contatti</a></li>
-    <li><a href="#prenota">Prenotazioni</a></li>
-  </ul>
-  <a href="#prenota" class="nav-cta">📅 Prenota Consulenza</a>
-</nav>
-
-<!-- HERO -->
 <section class="hero">
-  <div class="hero-content">
-    <h2>Consulenza Finanza Agevolata<br>Palermo & Sud Italia</h2>
-    <p>Accedi ai fondi PNRR, Smart&Start e Resto al Sud con un supporto completo e personalizzato.</p>
-    <a href="#prenota" class="cta-button">Prenota Consulenza Gratuita</a>
-    <div class="social-bar">
-      <a href="https://www.linkedin.com/in/alessandro-mamone/" target="_blank" rel="noopener noreferrer"><i class="ri-linkedin-box-fill"></i></a>
-      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="ri-instagram-fill"></i></a>
-      <a href="https://wa.me/393662460159" target="_blank" rel="noopener noreferrer"><i class="ri-whatsapp-fill"></i></a>
-    </div>
+  <div class="hero-content fade-in">
+    <h2>ALESSANDRO MAMONE<br>BUSINESS PLAN</h2>
+    <p>Accedi ai fondi PNRR, Smart&Start e Resto al Sud con un supporto completo e personalizzato. Palermo & Sud Italia.</p>
+    <a href="https://calendar.app.google/6QjruiQZVCrxAFGM7" target="_blank" class="btn-prenota">Prenota Consulenza Gratuita</a>
   </div>
-  <img src="img/mamone.jpg" alt="Alessandro Mamone Consulente Finanza Agevolata">
+  <img src="img/mamone.jpg" alt="Alessandro Mamone - Consulente Finanza Agevolata Palermo" class="fade-in">
 </section>
 
-<!-- SERVIZI -->
-<section id="servizi">
-  <h2 class="section-title">I Nostri Servizi</h2>
-  <div class="services">
-    <div class="service-box">
-      <h3>PNRR & Fondi Europei</h3>
-      <p>Strategia e gestione completa per ottenere i fondi migliori per la tua impresa.</p>
-    </div>
-    <div class="service-box">
-      <h3>Smart&Start & Resto al Sud</h3>
-      <p>Assistenza per presentazione domande e ottenimento finanziamenti agevolati.</p>
-    </div>
-    <div class="service-box">
-      <h3>Bandi Regionali</h3>
-      <p>Consulenza per agevolazioni attive in Sicilia e Sud Italia per imprese e startup.</p>
-    </div>
+<section class="services">
+  <div class="service-box fade-in">
+    <h3>PNRR & Fondi Europei</h3>
+    <p>Strategia e gestione completa per ottenere i fondi migliori per la tua impresa.</p>
+  </div>
+  <div class="service-box fade-in">
+    <h3>Smart&Start & Resto al Sud</h3>
+    <p>Assistenza per presentazione domande e ottenimento finanziamenti agevolati.</p>
+  </div>
+  <div class="service-box fade-in">
+    <h3>Bandi Regionali</h3>
+    <p>Scopri le agevolazioni attive in Sicilia e Sud Italia per far crescere la tua azienda.</p>
   </div>
 </section>
 
-<!-- FORM -->
 <section class="lead-form" id="form">
-  <h2>Richiedi Informazioni</h2>
+  <h2>Verifica la tua idoneità in 1 minuto</h2>
   <form action="https://formspree.io/f/xzzawvob" method="POST">
     <input type="text" name="nome" placeholder="Nome e Cognome" required><br>
     <input type="email" name="email" placeholder="Email" required><br>
     <input type="tel" name="telefono" placeholder="Telefono" required><br>
-    <input type="text" name="interesse" placeholder="Interesse (es. Resto al Sud)" required><br>
+    <input type="text" name="settore" placeholder="Settore azienda" required><br>
+    <input type="text" name="interesse" placeholder="Interesse bandi" required><br>
     <button type="submit">INVIA RICHIESTA</button>
   </form>
-</section>
 
-<!-- PRENOTA -->
-<section id="prenota">
-  <h2 class="section-title">Prenota la tua Consulenza</h2>
-  <p>Prenota un incontro gratuito con Alessandro Mamone.<br>
-  Scegli giorno e orario direttamente dal calendario:</p>
-  <br>
-  <a href="https://calendar.app.google/6QjruiQZVCrxAFGM7" target="_blank" rel="noopener noreferrer" class="cta-button">📅 Vai al Calendario</a>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  &copy; 2025 Mamone.BusinessPlan — Consulenza Finanza Agevolata Palermo & Sud Italia.
-  <div class="socials">
-    <a href="https://www.linkedin.com/in/alessandro-mamone/" target="_blank" rel="noopener noreferrer"><i class="ri-linkedin-fill"></i></a>
-    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="ri-instagram-fill"></i></a>
-    <a href="https://wa.me/393662460159" target="_blank" rel="noopener noreferrer"><i class="ri-whatsapp-fill"></i></a>
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/alessandro-mamone/" target="_blank" aria-label="LinkedIn">
+      <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
   </div>
+</section>
+
+<footer>
+  &copy; 2025 Alessandro Mamone — Consulenza Finanza Agevolata Palermo & Sud Italia. Tutti i diritti riservati.
 </footer>
 
-<!-- WHATSAPP FLOAT -->
-<a href="https://wa.me/393662460159" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat su WhatsApp">
-  <i class="ri-whatsapp-line"></i>
+<!-- Pulsante WhatsApp -->
+<a href="https://wa.me/393662460159?text=Salve%20Alessandro,%20vorrei%20prenotare%20una%20consulenza." 
+   class="whatsapp-btn" aria-label="Chatta su WhatsApp" target="_blank" rel="noopener">
+  <i class="fa-brands fa-whatsapp"></i>
 </a>
 
-<!-- PRENOTA ORA BUTTON -->
-<a href="https://calendar.app.google/6QjruiQZVCrxAFGM7" class="prenota-float" target="_blank" rel="noopener noreferrer" aria-label="Prenota Consulenza">📅 Prenota Ora</a>
+<!-- Bottone fluttuante Prenota Ora -->
+<a href="https://calendar.app.google/6QjruiQZVCrxAFGM7" target="_blank" class="floating-prenota" rel="noopener">
+  Prenota Ora
+</a>
 
 <!-- COOKIE BANNER -->
 <div id="cookie-banner">
-  <p>Questo sito utilizza cookie tecnici e analitici per offrirti la migliore esperienza possibile.</p>
-  <button id="accept-cookies">Accetta</button>
-  <button id="decline-cookies">Rifiuta</button>
+  <p>Questo sito utilizza cookie tecnici e di analisi per offrirti la migliore esperienza. Cliccando “Accetta” acconsenti all’uso dei cookie.</p>
+  <div>
+    <button id="accept-cookies">Accetta</button>
+    <button id="decline-cookies">Rifiuta</button>
+  </div>
 </div>
 
 <script>
-document.addEventListener("DOMContentLoaded",()=>{
-  if(!localStorage.getItem("cookieConsent")){
-    document.getElementById("cookie-banner").style.display="block";
-  }
-  document.getElementById("accept-cookies").addEventListener("click",()=>{
-    localStorage.setItem("cookieConsent","accepted");
-    document.getElementById("cookie-banner").style.display="none";
-  });
-  document.getElementById("decline-cookies").addEventListener("click",()=>{
-    localStorage.setItem("cookieConsent","declined");
-    document.getElementById("cookie-banner").style.display="none";
-  });
-});
+  // ANIMAZIONE SCROLL
+  const elements = document.querySelectorAll('.fade-in');
+  const reveal = () => {
+    elements.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 100) el.classList.add('visible');
+    });
+  };
+  window.addEventListener('scroll', reveal);
+  window.addEventListener('load', reveal);
+
+  // COOKIE BANNER
+  const banner = document.getElementById('cookie-banner');
+  const acceptBtn = document.getElementById('accept-cookies');
+  const declineBtn = document.getElementById('decline-cookies');
+
+  if (localStorage.getItem('cookieConsent') === 'accepted') banner.style.display = 'none';
+
+  acceptBtn.onclick = () => {
+    localStorage.setItem('cookieConsent', 'accepted');
+    banner.style.display = 'none';
+  };
+  declineBtn.onclick = () => {
+    localStorage.setItem('cookieConsent', 'declined');
+    banner.style.display = 'none';
+  };
 </script>
 
 </body>
