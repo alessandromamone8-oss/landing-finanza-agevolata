@@ -1,311 +1,61 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Consulenza Finanza Agevolata Palermo | Alessandro Mamone Business Plan</title>
-  <meta name="description" content="Consulenza professionale in finanza agevolata a Palermo e Sud Italia. Scopri i bandi attivi come Resto al Sud, Smart&Start, Nuova Sabatini, Cultura Crea, IRFIS e altri.">
-  <meta name="keywords" content="finanza agevolata Palermo, business plan, PNRR, Resto al Sud, Smart&Start, Invitalia, IRFIS, bandi Sicilia, startup, consulenza imprese, Alessandro Mamone">
-  <meta name="author" content="Alessandro Mamone Business Plan">
-  <meta property="og:title" content="Alessandro Mamone | Finanza Agevolata Palermo & Sud Italia">
-  <meta property="og:description" content="Accedi ai principali incentivi e finanziamenti agevolati per startup e imprese nel Sud Italia.">
-  <meta property="og:image" content="img/mamone.jpg">
-  <meta property="og:type" content="website">
-  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Alessandro Mamone - Finanza Agevolata Palermo</title>
+  <meta name="description" content="Consulenza in finanza agevolata per imprese e startup in Sicilia e Sud Italia.">
+  <link rel="stylesheet" href="style.css" />
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  
-  <style>
-    :root {
-      --blu: #2341e1;
-      --azzurro: #739da4;
-      --giallo: #ffd21b;
-    }
-
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #f0f4f8; color: #333; scroll-behavior: smooth; }
-
-    /* === HERO === */
-    .hero {
-      display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
-      background: linear-gradient(135deg, var(--blu), var(--azzurro));
-      color: white; padding: 100px 20px;
-    }
-    .hero-content { flex: 1 1 400px; max-width: 550px; padding: 20px; }
-    .hero-content h1 {
-      font-family: 'Anton', sans-serif;
-      font-size: 2.6em;
-      color: var(--giallo);
-      text-shadow: 1px 1px 0 var(--blu), 2px 2px 8px rgba(0,0,0,0.3);
-      margin-bottom: 20px;
-      line-height: 1.2;
-    }
-    .hero-content p { font-size: 1.1em; margin-bottom: 30px; }
-
-    .btn-prenota {
-      background: linear-gradient(135deg, var(--blu), #3b54ff);
-      color: #fff; font-weight: 600; padding: 16px 40px; border-radius: 50px;
-      font-size: 1.1em; text-decoration: none; transition: 0.3s;
-      box-shadow: 0 5px 15px rgba(35,65,225,0.3);
-    }
-    .btn-prenota:hover {
-      background: linear-gradient(135deg, #1c32b3, var(--blu));
-      transform: translateY(-3px);
-    }
-
-    .hero img {
-      flex: 1 1 300px; max-width: 420px; border-radius: 20px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-    }
-
-    /* === SERVIZI === */
-    .services {
-      display: flex; flex-wrap: wrap; justify-content: center; gap: 25px;
-      margin: 70px 20px;
-    }
-    .service-box {
-      background: #fff; flex: 1 1 280px; max-width: 320px; padding: 30px;
-      border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-      text-align: center; transition: 0.3s;
-    }
-    .service-box:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 18px 40px rgba(0,0,0,0.12);
-    }
-    .service-box h3 {
-      font-family: 'Anton', sans-serif; color: var(--blu);
-      text-shadow: 1px 1px 0 var(--giallo);
-      margin-bottom: 12px;
-    }
-
-    /* === BANDI ATTIVI === */
-    .bandi {
-      background: #fff; padding: 70px 20px; text-align: center;
-      box-shadow: inset 0 0 40px rgba(0,0,0,0.05);
-    }
-    .bandi h2 {
-      font-family: 'Anton', sans-serif; color: var(--blu); font-size: 2em;
-      margin-bottom: 20px; text-shadow: 1px 1px 0 var(--giallo);
-    }
-    .bandi p { color: #555; margin-bottom: 40px; }
-
-    .bandi-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 25px; max-width: 1100px; margin: 0 auto;
-    }
-    .bando-card {
-      background: #f9fbfd; padding: 25px; border-radius: 15px;
-      text-decoration: none; color: #333; transition: 0.3s;
-      box-shadow: 0 8px 18px rgba(0,0,0,0.08);
-    }
-    .bando-card:hover {
-      background: var(--giallo);
-      transform: translateY(-6px);
-      color: var(--blu);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
-    }
-    .bando-card i {
-      font-size: 2em; color: var(--blu); margin-bottom: 15px;
-    }
-    .bando-card h3 {
-      font-family: 'Anton', sans-serif; margin-bottom: 10px; color: var(--blu);
-    }
-    .bando-card p { font-size: 0.95em; color: #444; }
-
-    /* === FORM === */
-    .lead-form {
-      background: #fff; max-width: 550px; margin: 70px auto; padding: 40px;
-      border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-      text-align: center;
-    }
-    .lead-form h2 {
-      font-family: 'Anton', sans-serif; color: var(--blu);
-      margin-bottom: 25px; font-size: 1.8em;
-    }
-    .lead-form input {
-      width: 90%; padding: 15px; margin: 12px 0;
-      border: 1px solid #ccc; border-radius: 10px;
-    }
-    .lead-form button {
-      background: var(--blu); color: #fff; border: none;
-      padding: 15px 40px; border-radius: 10px;
-      cursor: pointer; transition: 0.3s; font-size: 1.1em;
-    }
-    .lead-form button:hover { background: #1c32b3; }
-
-    /* === SOCIAL === */
-    .social-links {
-      display: flex; justify-content: center; gap: 15px; margin-top: 30px;
-    }
-    .social-links a {
-      background: #fff; border: 2px solid var(--blu); color: var(--blu);
-      font-size: 1.5em; width: 50px; height: 50px;
-      border-radius: 50%; display: flex; align-items: center; justify-content: center;
-      transition: 0.3s;
-    }
-    .social-links a:hover {
-      background: var(--giallo); border-color: var(--giallo);
-      color: var(--blu); transform: translateY(-3px);
-    }
-
-    /* === PULSANTI FISSI === */
-    .whatsapp-btn {
-      position: fixed; bottom: 25px; right: 25px;
-      background: #25D366; color: white; font-size: 24px;
-      width: 58px; height: 58px; border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-      transition: 0.3s; z-index: 999;
-    }
-    .whatsapp-btn:hover { background: #1ebe5c; transform: scale(1.08); }
-
-    .floating-prenota {
-      position: fixed; bottom: 95px; right: 25px;
-      background: linear-gradient(135deg, var(--blu), var(--azzurro));
-      color: #fff; font-weight: 600;
-      padding: 14px 26px; border-radius: 50px;
-      font-size: 1em; box-shadow: 0 5px 15px rgba(35,65,225,0.3);
-      text-decoration: none; transition: 0.3s; z-index: 998;
-    }
-    .floating-prenota:hover {
-      background: linear-gradient(135deg, #1c32b3, var(--blu));
-      transform: translateY(-3px);
-    }
-
-    footer {
-      background: var(--blu); color: #fff; text-align: center; padding: 25px; font-size: 0.9em;
-    }
-
-    /* COOKIE BANNER */
-    #cookie-banner {
-      position: fixed; bottom: 0; left: 0; width: 100%;
-      background: var(--blu); color: white; padding: 20px;
-      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; z-index: 1000;
-    }
-    #cookie-banner button {
-      background: var(--giallo); color: var(--blu); border: none; padding: 10px 20px; border-radius: 8px; font-weight: bold; cursor: pointer;
-    }
-    #cookie-banner button:hover { background: #ffe35a; }
-
-    @media (max-width:768px) {
-      .hero { flex-direction: column; text-align: center; }
-      .hero img { margin-top: 20px; }
-      .floating-prenota { bottom: 90px; right: 15px; padding: 12px 22px; font-size: 0.95em; }
-    }
-  </style>
 </head>
-
 <body>
+  <header class="header">
+    <a href="index.html" class="logo">ALESSANDRO MAMONE</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#bandi">Bandi</a>
+      <a href="#form">Contatti</a>
+    </nav>
+  </header>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-content">
-    <h1>Consulenza Finanza Agevolata<br>Palermo & Sud Italia</h1>
-    <p>Accedi ai fondi PNRR, Smart&Start e Resto al Sud con un supporto completo e personalizzato.</p>
-    <a href="#" id="open-modal" class="btn-prenota"><i class="fa-solid fa-calendar-check"></i> Prenota Consulenza Gratuita</a>
-  </div>
-  <img src="img/mamone.jpg" alt="Alessandro Mamone - Consulente Finanza Agevolata Palermo">
-</section>
+  <section class="hero-sub">
+    <h1>Consulenza Finanza Agevolata</h1>
+    <p>Palermo & Sud Italia — Accesso a bandi, PNRR, Smart&Start, Resto al Sud e strumenti regionali.</p>
+  </section>
 
-<!-- SERVIZI -->
-<section class="services">
-  <div class="service-box">
-    <h3>PNRR & Fondi Europei</h3>
-    <p>Strategia e gestione completa per ottenere i fondi migliori per la tua impresa.</p>
-  </div>
-  <div class="service-box">
-    <h3>Smart&Start & Resto al Sud</h3>
-    <p>Assistenza per presentazione domande e ottenimento finanziamenti agevolati.</p>
-  </div>
-  <div class="service-box">
-    <h3>Bandi Regionali</h3>
-    <p>Scopri le agevolazioni attive in Sicilia e Sud Italia per far crescere la tua azienda.</p>
-  </div>
-</section>
+  <section class="content">
+    <h2 id="bandi">Strumenti di Finanza Agevolata Attivi</h2>
+    <p>Seleziona il bando di tuo interesse per approfondire requisiti e modalità di accesso.</p>
+    <div class="bandi-container" style="margin-top:18px">
+      <a class="bando-card" href="resto-al-sud.html">Resto al Sud</a>
+      <a class="bando-card" href="smartstart.html">Smart&Start Italia</a>
+      <a class="bando-card" href="nuova-sabatini.html">Nuova Sabatini</a>
+      <a class="bando-card" href="on-tasso-zero.html">ON - Nuove Imprese a Tasso Zero</a>
+      <a class="bando-card" href="cultura-crea.html">Cultura Crea</a>
+      <a class="bando-card" href="irfis.html">Bandi IRFIS FinSicilia</a>
+      <a class="bando-card" href="regione-sicilia.html">Bandi Regione Sicilia</a>
+    </div>
 
-<!-- BANDI ATTIVI -->
-<section class="bandi" id="bandi">
-  <h2>Strumenti di Finanza Agevolata Attivi</h2>
-  <p>Accedi ai principali incentivi nazionali e regionali per startup, PMI e professionisti del Sud Italia.</p>
+    <div class="lead-form" id="form">
+      <h2>Verifica la tua idoneità in 1 minuto</h2>
+      <form action="https://formspree.io/f/xzzawvob" method="POST">
+        <input type="text" name="nome" placeholder="Nome e Cognome" required><br>
+        <input type="email" name="email" placeholder="Email" required><br>
+        <input type="tel" name="telefono" placeholder="Telefono" required><br>
+        <input type="text" name="settore" placeholder="Settore azienda" required><br>
+        <input type="text" name="interesse" placeholder="Interesse bandi" required><br>
+        <button type="submit">INVIA RICHIESTA</button>
+      </form>
+      <div class="social-links" style="margin-top:18px">
+        <a class="linkedin" href="https://www.linkedin.com/in/alessandro-mamone/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a class="instagram" href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a class="whatsapp" href="https://wa.me/393662460159" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </section>
 
-  <div class="bandi-container">
-    <a href="https://restoalsud.invitalia.it" target="_blank" class="bando-card">
-      <i class="fa-solid fa-location-dot"></i>
-      <h3>Resto al Sud</h3>
-      <p>Contributo a fondo perduto e finanziamento agevolato per chi investe nel Mezzogiorno.</p>
-    </a>
-
-    <a href="https://www.smartstart.invitalia.it" target="_blank" class="bando-card">
-      <i class="fa-solid fa-lightbulb"></i>
-      <h3>Smart&Start Italia</h3>
-      <p>Incentivo per startup innovative, fino a 1,5 milioni di euro.</p>
-    </a>
-
-    <a href="https://www.mimit.gov.it/it/incentivi/nuova-sabatini" target="_blank" class="bando-card">
-      <i class="fa-solid fa-gears"></i>
-      <h3>Nuova Sabatini</h3>
-      <p>Agevolazione per l’acquisto di macchinari e tecnologie produttive.</p>
-    </a>
-
-    <a href="https://www.invitalia.it/agevolazioni/nuove-imprese-a-tasso-zero" target="_blank" class="bando-card">
-      <i class="fa-solid fa-seedling"></i>
-      <h3>ON - Nuove Imprese a Tasso Zero</h3>
-      <p>Finanziamento agevolato per giovani e donne che avviano una nuova impresa.</p>
-    </a>
-
-    <a href="https://www.invitalia.it/agevolazioni/cultura-crea" target="_blank" class="bando-card">
-      <i class="fa-solid fa-masks-theater"></i>
-      <h3>Cultura Crea</h3>
-      <p>Sostegno alle imprese culturali e turistiche nel Sud Italia.</p>
-    </a>
-
-    <a href="https://www.irfis.it/bandi/" target="_blank" class="bando-card">
-      <i class="fa-solid fa-building-columns"></i>
-      <h3>Bandi IRFIS FinSicilia</h3>
-      <p>Finanziamenti regionali per imprese siciliane e nuovi progetti di sviluppo.</p>
-    </a>
-
-    <a href="https://www.regione.sicilia.it/istituzioni/servizi-informativi/bandi" target="_blank" class="bando-card">
-      <i class="fa-solid fa-file-signature"></i>
-      <h3>Bandi Regione Sicilia</h3>
-      <p>Agevolazioni regionali e fondi per il turismo, agricoltura e innovazione.</p>
-    </a>
-  </div>
-</section>
-
-<!-- FORM LEAD -->
-<section class="lead-form" id="form">
-  <h2>Verifica la tua idoneità in 1 minuto</h2>
-  <form action="https://formspree.io/f/xzzawvob" method="POST">
-    <input type="text" name="nome" placeholder="Nome e Cognome" required><br>
-    <input type="email" name="email" placeholder="Email" required><br>
-    <input type="tel" name="telefono" placeholder="Telefono" required><br>
-    <input type="text" name="settore" placeholder="Settore azienda" required><br>
-    <input type="text" name="interesse" placeholder="Interesse bandi" required><br>
-    <button type="submit">INVIA RICHIESTA</button>
-  </form>
-
-  <div class="social-links">
-    <a href="https://www.linkedin.com/in/alessandro-mamone/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-    <a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-    <a href="https://wa.me/393662460159" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  © 2025 Alessandro Mamone Business Plan — Finanza Agevolata Palermo & Sud Italia. Tutti i diritti riservati.
-</footer>
-
-<!-- COOKIE BANNER -->
-<div id="cookie-banner">
-  <p>Questo sito utilizza cookie tecnici per migliorare la tua esperienza di navigazione.</p>
-  <button onclick="document.getElementById('cookie-banner').style.display='none'">Accetta</button>
-</div>
-
-<!-- PULSANTI FISSI -->
-<a href="#" id="open-modal-2" class="floating-prenota">📅 Prenota Ora</a>
-<a href="https://wa.me/393662460159" target="_blank" class="whatsapp-btn"><i class="fa-brands fa-whatsapp"></i></a>
-
+  <footer>
+    <p>© 2025 Alessandro Mamone Business Plan — Finanza Agevolata Palermo & Sud Italia. Tutti i diritti riservati.</p>
+  </footer>
 </body>
 </html>
